@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fredericka+the+Great&family=Poppins:ital,wght@0,200;1,200&family=Zen+Dots&family=Londrina+Shadow&display=swap");
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: white;
+	box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #ffbd00;
+	border-radius: 5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin-top: 5%;
+	position: relative;
+	padding: 20px;
+	background-image: linear-gradient(
+		to right top,
+		#fa3f88,
+		#ff556a,
+		#ff764b,
+		#ff9a2a,
+		#ffbd00
+	);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text {
+	position: absolute;
+	text-align: center;
+}
+.brandname {
+	font-family: "Zen Dots", cursive;
+	font-size: 60px;
+	color: ff6700;
+	-webkit-text-stroke: 0.8px white;
+	letter-spacing: 20px;
+}
+.tagline {
+	font-family: "Fredericka the Great", cursive;
+	font-size: 28px;
+	color: black;
+}
+svg {
+	width: 100px;
+	height: 100px;
+	background-image: linear-gradient(
+		to right top,
+		#fa3f88,
+		#ff556a,
+		#ff764b,
+		#ff9a2a,
+		#ffbd00
+	);
+	padding: 10px;
+	box-shadow: 0 0 0 10px white;
+	border-radius: 10px;
+	transform: rotate(-45deg) scale(1.5);
+	fill: white;
+}
+
+main {
+	margin-top: 5%;
+	background-image: linear-gradient(
+		to right top,
+		#fa3f88,
+		#ff556a,
+		#ff764b,
+		#ff9a2a,
+		#ffbd00
+	);
+	box-shadow: inset 0 20px 14px -14px rgba(0, 0, 0, 0.25);
+}
+
+section {
+	margin: 0 15%;
+	padding: 30px 0;
+}
+.info {
+	position: relative;
+	text-align: center;
+	border: 4px dashed white;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.25);
+	box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.8),
+		-1px -1px 3px 0 rgba(255, 255, 255, 0.8),
+		inset -1px -1px 3px 0 rgba(0, 0, 0, 0.5),
+		1px 1px 3px 0 rgba(255, 255, 255, 0.5);
+}
+.circle1 {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #2e294e;
+	position: relative;
+	left: 97%;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.8),
+		-1px -1px 3px 0 rgba(255, 255, 255, 0.8),
+		inset -1px -1px 3px 0 rgba(0, 0, 0, 0.5),
+		1px 1px 3px 0 rgba(255, 255, 255, 0.5);
+}
+.info h2 {
+	font-family: "Londrina Shadow", cursive;
+	font-size: 45px;
+	color: black;
+	transform: skew(-10deg);
+}
+.info p {
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+}
+figure {
+	position: relative;
+	padding: 10px;
+}
+img {
+	position: relative;
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0 0 0 4px white, 0 0 0 7px orange, 0 0 0 10px white;
+	z-index: 10;
+}
+img:hover {
+	transform: scale(1.5);
+	transition: transform 1s ease-in-out;
+}
+figcaption {
+	color: orange;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	position: relative;
+	top: -60px;
+	z-index: 20;
+}
+.item {
+	margin-top: 15%;
+	display: flex;
+	flex-direction: row;
+}
+.reverse-card {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.description {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	margin: 15px 15px;
+	padding: 20px 0;
+	text-align: justify;
+	border-top: rgba(255, 255, 255, 0.3) 4px solid;
+	border-bottom: rgba(255, 255, 255, 0.3) 4px solid;
+}
+.card {
+	backdrop-filter: blur(20px);
+	background-color: rgba(255, 149, 0, 0.117);
+	box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+	border: 2px rgba(255, 255, 255, 0.4) solid;
+	border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+	border-right: 2px rgba(40, 40, 40, 0.35) solid;
+	border-radius: 13px;
+	padding: 20px;
+}
+
+.card h3 {
+	font-family: "Londrina Shadow", cursive;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	letter-spacing: 8px;
+}
+.card .price {
+	font-family: "Zen Dots", cursive;
+	font-size: 40px;
+	color: white;
+	padding: 8px 0;
+}
+.special {
+	background-color: #35eaa2;
+	width: 150px;
+	padding: 10px;
+	font-size: 20px;
+	box-shadow: 6px 6px 0 0 white;
+	color: white;
+	text-align: center;
+}
+.red {
+	background-color: #ff8a8a;
+}
+.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.options {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	font-family: "Poppins", sans-serif;
+}
+.options select {
+	border: none;
+	height: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	border-radius: 5px;
+}
+select option {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.tag {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+button {
+	border: none;
+	margin-top: 10%;
+	height: 40px;
+	border-radius: 50px;
+	font-family: "Poppins", sans-serif;
+}
+button:hover {
+	background-color: orange;
+	box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1000px) {
+	.item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

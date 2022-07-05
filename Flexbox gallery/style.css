@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gap: 6px;
+}
+
+/*use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: xhidden;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pic {
+  flex: 0 0 calc(33.3333% - var(--gap));
+  cursor: pointer;
+  transform-origin: var(--x) var(--y);
+  transition: all 1s ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+  pointer-events: none;
+}
+
+.active {
+  transform: scale(3.1);
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+}

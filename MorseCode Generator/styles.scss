@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #718462;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: anitialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.morse {
+  width: 90%;
+  height: 90%;
+  background-color: green;
+  border: 2px solid #69894e;
+}
+
+.screen {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  z-index: -2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: hidden;
+}
+
+.dot,
+.dash,
+.space {
+  position: relative;
+  display: inline-block;
+  color: red;
+  height: 30px;
+  width: 14px;
+  margin: 0;
+}
+
+.dot::after,
+.dash::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #c7e0b3;
+  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+}
+.dash {
+  width: 25px;
+}
+.dash::after {
+  border-radius: 0;
+  width: 20px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.keyboard > p {
+  padding: 12px 0;
+  text-align: center;
+  user-select: none;
+  border: 1px solid #69894e;
+  color: #c7e0b3;
+  flex: 1 1 10%;
+  background-color: black;
+  transition: all 300 ms ease;
+}
+
+.keyboard > p:hover {
+  color: white;
+  background-color: #718462;
+}

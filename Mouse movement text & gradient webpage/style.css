@@ -1,0 +1,126 @@
+body {
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 60px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: box-shadow 0.2s ease, padding 0.2s ease, background 0.2s ease;
+}
+.site-header.site-header--stuck {
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px 60px;
+  background-color: white;
+}
+
+.site-header__logo {
+  margin: 0;
+}
+.site-header__logo .logo-svg {
+  fill: white;
+}
+.site-header--stuck .site-header__logo .logo-svg {
+  fill: #33383A;
+}
+
+.menu {
+  flex: 1 1 auto;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 120ms ease;
+}
+.menu a:hover {
+  color: black;
+}
+.site-header--stuck .menu a {
+  color: black;
+}
+.site-header--stuck .menu a:hover {
+  color: #2cbcfd;
+}
+
+.hero-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  height: 100vh;
+  background-image: url("https://www.rareloop.com/app/uploads/2018/02/about-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: none;
+}
+.filter.gradient {
+  background-image: radial-gradient(circle at center, rgba(44, 188, 253, 0.8) 0, rgba(44, 188, 253, 0.9) 70%);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 20px;
+  padding: 200px 50px 100px 50px;
+  padding: calc((100vh / 2) - 80px) 50px 100px 50px;
+}
+
+.heading-1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.lead {
+  width: 750px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  color: white;
+  margin: 0;
+}
+
+.heading-1 + .lead {
+  margin-top: 15px;
+}
+
+.post {
+  width: 100%;
+  background: #F6F7F9;
+  margin-top: 600px;
+  margin-top: calc(100vh - 80px);
+  height: 500px;
+  height: 100vh;
+  /* background: linear-gradient(to right, white 0%, white 65%, $color-section 65%, $color-section 100%); */
+}

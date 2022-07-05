@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Tauri&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* CSS HEX */
+  --dark-purple: #330c2fff;
+  --purple: #7b287dff;
+  --white: #faeffaff;
+}
+
+/*use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: var(--white);
+  color: var(--dark-purple);
+  font-family: "Tauri", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--dark-purple);
+  box-shadow: 0 0 30px 5px white;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ring {
+  transform: rotate(-90deg);
+  transform-origin: 200px;
+  stroke: var(--purple);
+  stroke-width: 6px;
+  fill: transparent;
+  stroke-dasharray: 879.76, 879.76;
+  stroke-dashoffset: 879.76;
+  -webkit-animation: ringani 60s linear infinite;
+          animation: ringani 60s linear infinite;
+}
+
+@-webkit-keyframes ringani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ringani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.tick {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+}
+
+.tick::before {
+  content: " ";
+  position: absolute;
+  left: 49%;
+  right: 51%;
+  height: 12px;
+  top: 0;
+  border-left: var(--purple) solid 3px;
+}
+
+.widetick::before {
+  left: 48%;
+  right: 52%;
+  height: 16px;
+  top: 0;
+  border-left: var(--dark-purple) solid 5px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 56px;
+}
+
+.date {
+  position: absolute;
+  top: 240px;
+  font-size: 24px;
+}
+
+.colon {
+  position: relative;
+  top: -2px;
+  font-size: 65px;
+  width: 30px;
+  text-align: center;
+  -webkit-animation: flash 1s infinite cubic-bezier(1, 0.65, 0.59, 0.95);
+          animation: flash 1s infinite cubic-bezier(1, 0.65, 0.59, 0.95);
+}
+
+@-webkit-keyframes flash {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

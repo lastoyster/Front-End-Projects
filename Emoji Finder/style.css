@@ -1,0 +1,16 @@
+span {
+  font-size: 60px;
+}
+button{
+  width: 5rem;
+  background:#368b8b;
+  margin: 10px;
+  font-style: Nunito Sans;
+  padding: 5px;
+}
+  input[type=text] {
+  width: 1.8m;
+  padding: 10px 3px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

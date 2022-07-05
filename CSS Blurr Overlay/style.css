@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(45deg, #43399f, #4ec5ca);
+}
+
+.frame > * {
+  pointer-events: none;
+}
+
+.frame:hover {
+  cursor: pointer;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days, .cssc {
+  font-family: courier;
+  text-align: center;
+  color: white;
+}
+
+.days {
+  font-size: 85px;
+}
+
+.cssc {
+  font-size: 25px;
+  margin-top: -22px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.text {
+  height: 103px;
+  content: "";
+  position: relative;
+}
+
+.let {
+  width: 25px;
+  background-color: white;
+  content: "";
+  position: absolute;
+}
+
+.l1 {
+  top: 13px;
+  left: 2px;
+  height: 105px;
+  z-index: 1;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.l2 {
+  top: 15px;
+  left: -12px;
+  height: 30px;
+  transform: rotate(50deg);
+  z-index: 2;
+}
+
+.l3, .l4 {
+  border-radius: 50%;
+  background-color: transparent;
+  left: 18px;
+  height: 55px;
+  width: 55px;
+  top: 12px;
+  border: 25px solid white;
+  z-index: 2;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.l4 {
+  left: 102px;
+}
+
+.blinds {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 300px;
+  transition: bottom 300ms cubic-bezier(0.25, 0.1, 1, 1.83);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='25' height='25' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(78, 197, 202,.8)'/%3E%3Cpath d='M-20 31.5l10-10l10 10l10-10l10 10l10-10l10 10v-3l-10-10l-10 10l-10-10l-10 10l-10-10l-10 10zM-20-8.5l10-10l10 10l10-10l10 10l10-10l10 10v-3l-10-10l-10 10l-10-10l-10 10l-10-10l-10 10zM-20 71.5l10-10l10 10l10-10l10 10l10-10l10 10v-3l-10-10l-10 10l-10-10l-10 10l-10-10l-10 10z ' fill='rgba(67, 57, 159,1)'/%3E%3Cpath d='M-20 31.5l20-20l20 20l20-20l20 20l20-20l20 20v-3l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-8.5l20-20l20 20l20-20l20 20l20-20l20 20v-3l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 71.5l20-20l20 20l20-20l20 20l20-20l20 20v-3l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(247, 250, 252,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+}

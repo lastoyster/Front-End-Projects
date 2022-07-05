@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Toggle Book & Movie Cover</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="app" id="app" data-current-media="book">
+
+    <h1 class="title">3D cover (CSS)</h1>
+
+    <article class="media-container">
+        <div class="book-wrapper">
+            <div class="book">
+                <div class="book__front">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547625704l/43587154._SY475_.jpg" alt="cover">
+
+                </div>
+                <div class="book__paper"></div>
+                <div class="book__back"></div>
+            </div>
+            <div class="book-shadow"></div>
+        </div>
+
+        <div class="movie-wrapper">
+            <div class="movie">
+                <div class="movie__front">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Smurfs_The_Lost_Village_poster.jpg" alt="cover">
+                </div>
+                <div class="movie__edge"></div>
+                <div class="movie__side"></div>
+            </div>
+            <div class="movie-shadow"></div>
+        </div>
+    </article>
+
+    <div class="media-buttons" id="media-buttons">
+        <button class="media__button" value="book">Book</button>
+        <button class="media__button" value="movie">Movie</button>
+    </div>
+
+    <div class="controls">
+        <div class="controls__thickness">
+            <p>Book thickness: <span id="thickness-output">?</span></p>
+            <input id="thickness" type="range" min="1" max="80" step="1" value="40">
+        </div>
+    </div>
+
+</section>
+<!-- partial -->
+  <script  src="script.js"></script>
+
+</body>
+</html>

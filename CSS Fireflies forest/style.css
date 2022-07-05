@@ -1,0 +1,474 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root,
+html {
+  font-size: 62.5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.frame {
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+  background: linear-gradient(to top, rgba(0, 0, 56, 0.3), rgba(179, 179, 177, 0.3)), url("https://source.unsplash.com/1L71sPT5XKc");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.frame::before {
+  content: "DAY 85 - FIREFLIES IN THE FOREST";
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  top: 2rem;
+  left: 9rem;
+  text-shadow: 0 0 0.5rem #000;
+}
+
+.fly {
+  position: absolute;
+}
+.fly-1 {
+  top: 7%;
+  left: 95%;
+  animation: flying 41s ease-in-out -1.8s infinite alternate;
+}
+.fly-2 {
+  top: 65%;
+  left: 82%;
+  animation: flying 55s ease-in-out -3s infinite alternate;
+}
+.fly-3 {
+  top: 94%;
+  left: 41%;
+  animation: flying 34s ease-in-out -7.7s infinite alternate;
+}
+.fly-4 {
+  top: 29%;
+  left: 22%;
+  animation: flying 40s ease-in-out -5.9s infinite alternate;
+}
+.fly-5 {
+  top: 23%;
+  left: 99%;
+  animation: flying 52s ease-in-out -4.5s infinite alternate;
+}
+.fly-6 {
+  top: 100%;
+  left: 72%;
+  animation: flying 69s ease-in-out -1.6s infinite alternate;
+}
+.fly-7 {
+  top: 28%;
+  left: 47%;
+  animation: flying 50s ease-in-out -1s infinite alternate;
+}
+.fly-8 {
+  top: 3%;
+  left: 63%;
+  animation: flying 57s ease-in-out -0.1s infinite alternate;
+}
+.fly-9 {
+  top: 86%;
+  left: 13%;
+  animation: flying 68s ease-in-out -8.5s infinite alternate;
+}
+.fly-10 {
+  top: 19%;
+  left: 4%;
+  animation: flying 51s ease-in-out -7.4s infinite alternate;
+}
+.fly-11 {
+  top: 31%;
+  left: 89%;
+  animation: flying 27s ease-in-out -9.1s infinite alternate;
+}
+.fly-12 {
+  top: 31%;
+  left: 6%;
+  animation: flying 27s ease-in-out -2.8s infinite alternate;
+}
+.fly-13 {
+  top: 42%;
+  left: 80%;
+  animation: flying 52s ease-in-out -6.1s infinite alternate;
+}
+.fly-14 {
+  top: 44%;
+  left: 74%;
+  animation: flying 56s ease-in-out -3.2s infinite alternate;
+}
+.fly-15 {
+  top: 2%;
+  left: 82%;
+  animation: flying 42s ease-in-out -1.7s infinite alternate;
+}
+.fly-16 {
+  top: 67%;
+  left: 12%;
+  animation: flying 30s ease-in-out -5.8s infinite alternate;
+}
+.fly-17 {
+  top: 35%;
+  left: 93%;
+  animation: flying 42s ease-in-out -3.4s infinite alternate;
+}
+.fly-18 {
+  top: 69%;
+  left: 21%;
+  animation: flying 32s ease-in-out -4.7s infinite alternate;
+}
+.fly-19 {
+  top: 15%;
+  left: 92%;
+  animation: flying 28s ease-in-out -2.3s infinite alternate;
+}
+.fly-20 {
+  top: 82%;
+  left: 20%;
+  animation: flying 68s ease-in-out -3.9s infinite alternate;
+}
+.fly-21 {
+  top: 84%;
+  left: 31%;
+  animation: flying 52s ease-in-out -3.3s infinite alternate;
+}
+.fly-22 {
+  top: 29%;
+  left: 53%;
+  animation: flying 64s ease-in-out -8.8s infinite alternate;
+}
+.fly-23 {
+  top: 63%;
+  left: 74%;
+  animation: flying 58s ease-in-out -3.1s infinite alternate;
+}
+.fly-24 {
+  top: 15%;
+  left: 36%;
+  animation: flying 28s ease-in-out -2.8s infinite alternate;
+}
+.fly-25 {
+  top: 42%;
+  left: 54%;
+  animation: flying 46s ease-in-out -2.5s infinite alternate;
+}
+.fly-26 {
+  top: 77%;
+  left: 72%;
+  animation: flying 47s ease-in-out -8.4s infinite alternate;
+}
+.fly-27 {
+  top: 81%;
+  left: 25%;
+  animation: flying 59s ease-in-out -0.2s infinite alternate;
+}
+.fly-28 {
+  top: 73%;
+  left: 58%;
+  animation: flying 32s ease-in-out -5.5s infinite alternate;
+}
+.fly-29 {
+  top: 26%;
+  left: 62%;
+  animation: flying 70s ease-in-out -9s infinite alternate;
+}
+.fly-30 {
+  top: 55%;
+  left: 76%;
+  animation: flying 35s ease-in-out -5.9s infinite alternate;
+}
+.fly-31 {
+  top: 2%;
+  left: 51%;
+  animation: flying 66s ease-in-out -0.6s infinite alternate;
+}
+.fly-32 {
+  top: 70%;
+  left: 65%;
+  animation: flying 46s ease-in-out -3.9s infinite alternate;
+}
+.fly-33 {
+  top: 10%;
+  left: 95%;
+  animation: flying 28s ease-in-out -6.1s infinite alternate;
+}
+.fly-34 {
+  top: 3%;
+  left: 100%;
+  animation: flying 43s ease-in-out -4.9s infinite alternate;
+}
+.fly-35 {
+  top: 37%;
+  left: 14%;
+  animation: flying 30s ease-in-out -7.9s infinite alternate;
+}
+.fly-36 {
+  top: 40%;
+  left: 8%;
+  animation: flying 45s ease-in-out -7.6s infinite alternate;
+}
+.fly-37 {
+  top: 100%;
+  left: 67%;
+  animation: flying 25s ease-in-out -9.7s infinite alternate;
+}
+.fly-38 {
+  top: 86%;
+  left: 89%;
+  animation: flying 21s ease-in-out -2.8s infinite alternate;
+}
+.fly-39 {
+  top: 38%;
+  left: 7%;
+  animation: flying 44s ease-in-out -2s infinite alternate;
+}
+.fly-40 {
+  top: 17%;
+  left: 62%;
+  animation: flying 31s ease-in-out -1.3s infinite alternate;
+}
+.fly-41 {
+  top: 48%;
+  left: 28%;
+  animation: flying 68s ease-in-out -3.3s infinite alternate;
+}
+.fly-42 {
+  top: 11%;
+  left: 53%;
+  animation: flying 55s ease-in-out -0.4s infinite alternate;
+}
+.fly-43 {
+  top: 39%;
+  left: 90%;
+  animation: flying 45s ease-in-out -7.6s infinite alternate;
+}
+.fly-44 {
+  top: 88%;
+  left: 16%;
+  animation: flying 33s ease-in-out -2.6s infinite alternate;
+}
+.fly-45 {
+  top: 85%;
+  left: 12%;
+  animation: flying 64s ease-in-out -5.5s infinite alternate;
+}
+.fly-46 {
+  top: 18%;
+  left: 84%;
+  animation: flying 38s ease-in-out -6.5s infinite alternate;
+}
+.fly-47 {
+  top: 35%;
+  left: 29%;
+  animation: flying 36s ease-in-out -7.7s infinite alternate;
+}
+.fly-48 {
+  top: 25%;
+  left: 32%;
+  animation: flying 45s ease-in-out -4.4s infinite alternate;
+}
+.fly-49 {
+  top: 48%;
+  left: 20%;
+  animation: flying 41s ease-in-out -1.7s infinite alternate;
+}
+.fly-50 {
+  top: 48%;
+  left: 54%;
+  animation: flying 34s ease-in-out -4.5s infinite alternate;
+}
+
+.dot {
+  width: 0.2rem;
+  height: 0.3rem;
+  border-radius: 30%;
+  background: gold;
+  box-shadow: 0 0 1.5rem 0.3rem rgba(255, 255, 255, 0.5);
+}
+.dot-1 {
+  transform-origin: -1px 10px;
+  animation: rotating 45s ease-in-out -0.0666666667s infinite;
+}
+.dot-2 {
+  transform-origin: -6px 12px;
+  animation: rotating 37s ease-in-out -3.5333333333s infinite;
+}
+.dot-3 {
+  transform-origin: 16px 22px;
+  animation: rotating 19s ease-in-out -5.7333333333s infinite;
+}
+.dot-4 {
+  transform-origin: -2px 17px;
+  animation: rotating 23s ease-in-out -5.8s infinite;
+}
+.dot-5 {
+  transform-origin: -1px 14px;
+  animation: rotating 22s ease-in-out -0.2s infinite;
+}
+.dot-6 {
+  transform-origin: -6px 21px;
+  animation: rotating 19s ease-in-out -2.6666666667s infinite;
+}
+.dot-7 {
+  transform-origin: 16px 4px;
+  animation: rotating 25s ease-in-out -3.8666666667s infinite;
+}
+.dot-8 {
+  transform-origin: 14px 22px;
+  animation: rotating 16s ease-in-out -0.6666666667s infinite;
+}
+.dot-9 {
+  transform-origin: 17px 11px;
+  animation: rotating 16s ease-in-out -1.2s infinite;
+}
+.dot-10 {
+  transform-origin: 8px 15px;
+  animation: rotating 37s ease-in-out -2.3333333333s infinite;
+}
+.dot-11 {
+  transform-origin: 14px 2px;
+  animation: rotating 33s ease-in-out -5.6666666667s infinite;
+}
+.dot-12 {
+  transform-origin: 0px 8px;
+  animation: rotating 41s ease-in-out -6.2666666667s infinite;
+}
+.dot-13 {
+  transform-origin: 0px 16px;
+  animation: rotating 39s ease-in-out -3.6s infinite;
+}
+.dot-14 {
+  transform-origin: 16px 21px;
+  animation: rotating 37s ease-in-out -3.0666666667s infinite;
+}
+.dot-15 {
+  transform-origin: 3px 1px;
+  animation: rotating 23s ease-in-out -5.3333333333s infinite;
+}
+.dot-16 {
+  transform-origin: 7px 11px;
+  animation: rotating 35s ease-in-out -1s infinite;
+}
+.dot-17 {
+  transform-origin: -1px -2px;
+  animation: rotating 29s ease-in-out -5.9333333333s infinite;
+}
+.dot-18 {
+  transform-origin: 16px 10px;
+  animation: rotating 16s ease-in-out -5.5333333333s infinite;
+}
+.dot-19 {
+  transform-origin: 14px 19px;
+  animation: rotating 19s ease-in-out -5s infinite;
+}
+.dot-20 {
+  transform-origin: 15px 7px;
+  animation: rotating 28s ease-in-out -6.1333333333s infinite;
+}
+.dot-21 {
+  transform-origin: 10px 14px;
+  animation: rotating 33s ease-in-out -4.2s infinite;
+}
+.dot-22 {
+  transform-origin: 6px 2px;
+  animation: rotating 21s ease-in-out -4.9333333333s infinite;
+}
+.dot-23 {
+  transform-origin: 16px 9px;
+  animation: rotating 45s ease-in-out -0.0666666667s infinite;
+}
+.dot-24 {
+  transform-origin: 15px 0px;
+  animation: rotating 22s ease-in-out -3.2s infinite;
+}
+.dot-25 {
+  transform-origin: 16px -6px;
+  animation: rotating 23s ease-in-out -2.7333333333s infinite;
+}
+.dot-26 {
+  transform-origin: 5px 12px;
+  animation: rotating 41s ease-in-out -2.4666666667s infinite;
+}
+.dot-27 {
+  transform-origin: 0px 0px;
+  animation: rotating 39s ease-in-out -4.6s infinite;
+}
+.dot-28 {
+  transform-origin: 14px 6px;
+  animation: rotating 30s ease-in-out -2.4s infinite;
+}
+.dot-29 {
+  transform-origin: -3px 8px;
+  animation: rotating 38s ease-in-out -6.1333333333s infinite;
+}
+.dot-30 {
+  transform-origin: 16px 22px;
+  animation: rotating 16s ease-in-out -1.8s infinite;
+}
+
+@keyframes rotating {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes flying {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(20px, 50px);
+  }
+  20% {
+    transform: translate(-30px, 10px);
+  }
+  30% {
+    transform: translate(10px, 60px);
+  }
+  40% {
+    transform: translate(50px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -40px);
+  }
+  60% {
+    transform: translate(-40px, 20px);
+  }
+  70% {
+    transform: translate(30px, -30px);
+  }
+  80% {
+    transform: translate(0px, -60px);
+  }
+  90% {
+    transform: translate(40px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
